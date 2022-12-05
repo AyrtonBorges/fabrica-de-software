@@ -4,7 +4,6 @@ pipeline {
         stage('Setup') {
             steps {
                 echo 'Instalando as depedências'
-                sh 'docker '
             }
         }
     }
