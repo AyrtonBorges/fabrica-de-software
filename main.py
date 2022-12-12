@@ -4,7 +4,7 @@ import pandas as pd
 # Creating list to append tweet data to
 attributes_container = []
 
-with open('venv/teste.csv', 'w', encoding='utf-8') as entrada_file:
+with open('teste.csv', 'w', encoding='utf-8') as entrada_file:
     # Using TwitterSearchScraper to scrape data and append tweets to list
     entrada = sntwitter.TwitterSearchScraper('Bitcoin since:2022-05-22 until:2022-11-30').get_items()
     template = 'Username;Displayname;ID;Descrição\n'
