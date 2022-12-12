@@ -1,0 +1,6 @@
+version: '1'
+services:
+  ubuntu:
+    build: ./dockerfiles/ubuntu/ 
+    image: ayrtonborges/ubuntu-teste:v1.0
+    volumes: 
