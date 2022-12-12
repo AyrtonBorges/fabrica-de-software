@@ -1,6 +1,13 @@
 version: '1'
 services:
+<<<<<<< HEAD
   Paradigma:
     image: AyrtonBorges/WebScrapping
     build: .
       
+=======
+  ubuntu:
+    build: ./dockerfiles/ubuntu/ 
+    image: ayrtonborges/ubuntu-teste:v1.0
+    volumes: 
+>>>>>>> 2caffeb99d0fa80b809fd4b785b8163d6522a7c9
