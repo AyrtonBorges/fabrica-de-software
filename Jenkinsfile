@@ -2,6 +2,9 @@ pipeline {
     agent any
 
     stages {
+        stage('Build') {
+            sh 'docker image build django:latest'
+        }
         stage('Test') {
             steps {
                 sh 'docker container run -p 8000:8000 django:latest python manage.py test'
