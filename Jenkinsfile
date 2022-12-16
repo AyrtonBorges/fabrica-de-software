@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Build') {
+            steps {
             sh 'docker image build django:latest'
+            }
         }
         stage('Test') {
             steps {
