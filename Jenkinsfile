@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'ls'
                 sh 'docker image build -t ayrtonborges/django:v1 .'
             }
         }
