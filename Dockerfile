@@ -7,4 +7,3 @@ FROM ubuntu
     RUN pip install pandas
     COPY main.py .
     RUN python3 main.py
-    CMD /bin/bash
