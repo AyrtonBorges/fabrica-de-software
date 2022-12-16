@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                copy
                 sh 'docker container run -p 8000:8000 django:latest python manage.py test'
             }
         }
