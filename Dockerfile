@@ -1,3 +1,3 @@
 FROM django:latest
-    CMD "ls"
+    SHELL [ "ls" ]
     COPY manage.py .
