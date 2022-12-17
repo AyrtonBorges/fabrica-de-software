@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh 'docker container run -d -p 8001:8001 ayrtonborges/my-django-app:latest'
+                sh 'docker container run -d -p 8000:8000 ayrtonborges/my-django-app:latest'
             }
         }
     }
