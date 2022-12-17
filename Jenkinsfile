@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh 'docker container run -p 8080:80 ayrtonborges/html'
+                sh 'docker container run -p 8082:80 ayrtonborges/html'
             }
         }
     }
