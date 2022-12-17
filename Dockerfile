@@ -9,8 +9,6 @@ WORKDIR /code
 # Copia os arquivos do projeto para o diretório de trabalho
 COPY . /code/
 
-RUN "apt install python3-pip -y"
-
 RUN "pip install django"
 
 # Expõe a porta 8000 para o mundo externo
